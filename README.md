@@ -19,3 +19,4 @@ Instalar mysql dentro de docker
 Levantarlo dentro de docker *docker-compose up -d mysql*
 driver para *mysql npm i --save mysql2*
 npm i sequelize-cli --save-dev para hacer migraciones en ambiente de dev
+heroku git:remote -a *nombre del proyecto en heroku*, luego heroku addons:create heroku-postgresql:*nombre del plan en heroku*
