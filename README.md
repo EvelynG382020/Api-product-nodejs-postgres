@@ -1,3 +1,10 @@
+https://pure-peak-92886.herokuapp.com/
+endpoints /users, /customers, /products?price_max=10, /categories, /orders, /orders/add-item
+Relaciones entre las tablas:
+1 - 1 Se debe crear user o customers asignándole un user.
+1 - N Una categoria puede tener varios productos pero 1 producto viene de una categoria.
+N - N Una orden de compra puede tener varios productos y un producto de varios ordenes
+, categoria y productos asociados a esa categoria
 *Curso de Backend con Node.js: Base de Datos con PostgreSQL*
 Instalación de Docker
 *docker-compose up -d postgres*
@@ -20,3 +27,4 @@ Levantarlo dentro de docker *docker-compose up -d mysql*
 driver para *mysql npm i --save mysql2*
 npm i sequelize-cli --save-dev para hacer migraciones en ambiente de dev
 heroku git:remote -a *nombre del proyecto en heroku*, luego heroku addons:create heroku-postgresql:*nombre del plan en heroku*
+
